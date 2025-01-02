@@ -49,6 +49,37 @@
     <h4>범위(scope) 확인</h4>
     <button type="button" onclick="scopeTest1()">범위 테스트 1</button>
     <button type="button" onclick="scopeTest2()">범위 테스트 2</button>
+
+    <hr>
+    <h1>JavaScript 자료형</h1>
+    <pre>
+        자료형 : 값(data)의 형태를 구분
+            - 값의 연산 결과에 따른 동작을 구분
+
+        JavaScript는 변수 선언 시 별도의 자료형을 지정하지 않음
+        단, 변수에 값이 대입되어질 때 자료형이 결정된다
+
+        string (문자열)
+            "",'' 형태의 값
+            ex) "홍길동", 'KH정보교육원'
+        number (숫자)
+            정수, 실수 형태의 값
+            ex) -3(음의 정수), 5(양의 정수), 0, 3.14
+        boolean (논리값)
+            true(참), false(거짓)
+        object (객체)
+            여러 값을 저장하는 형태
+            ex) 배열 [10, 20, 30], JS 객체 { k:v, k:v, k:v ... }
+        function (함수)
+            함수도 변수에 저장 가능하다
+        undefined (정의되지 않은 변수)
+            변수가 선언만 되어있는 상태
+            (값이 대입 X)
+        null (참조하는게 없음)
+            객체를 찾는 코드가 대입되었는데 객체가 없음을 의미
+    </pre>
+
+    <button type="button" onclick="typeCheck()">자료형 확인</button>
     <script src="../js/02_변수와자료형.js"></script>
 </body>
 </html>

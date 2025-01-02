@@ -17,6 +17,6 @@ function lightMode(){
 function darkMode(){
     body.style.backgroundColor = "black";
     body.style.color = "white";
-}
+} 
 
 // JS를 이용해서 CSS를 변경하면 inline-style로 적용된다

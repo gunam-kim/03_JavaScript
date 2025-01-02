@@ -116,3 +116,65 @@ function scopeTest2()   // 함수 선언
     console.log("if 후 : ", name);
 
 }   // 함수 정의 끝
+
+
+
+// 자료형 확인
+function typeCheck(){
+    // undefined
+    let undef;
+    // typeof 연산자 : 변수/값의 자료형을 확인하는 연산자
+    console.log("undef : ", undef, typeof undef);   // 아무값도 정의되어 있지 않음
+
+    // string
+    const name = "성기훈";
+    const phone = '01012345678';
+    console.log("name : ", name, typeof name);
+    console.log("phone : ", phone, typeof phone);
+
+    // number
+    const age = 34;
+    const height = 180;
+    const sight = 1.0;
+    console.log("age : ", age, typeof age);
+    console.log("height : ", height, typeof height);
+    console.log("sight : ", sight, typeof sight);
+
+    // boolean
+    const bool1 = true;
+    const bool2 = false;
+    console.log("bool1 : ", bool1, typeof bool1);
+    console.log("bool2 : ", bool2, typeof bool2);
+
+    // object
+    // 1. 배열 (Array) : 변수의 묶음
+    // 묶인 변수에 0부터 1씩 증가하는 숫자를 부여 (index)
+    const numbers = [11, 22, 33];   // 배열 생성
+    // 배열 전체 타입 검사
+    console.log("numbers : ", numbers, typeof numbers);
+    // 배열 내 요소 하나씩 꺼내기
+    console.log("numbers[0]", numbers[0], typeof numbers[0]);
+    console.log("numbers[1]", numbers[1], typeof numbers[1]);
+    console.log("numbers[2]", numbers[2], typeof numbers[2]);
+
+    // 2. JS객체 (k:v)
+    // k(key) : 값을 구분하는 이름 (변수명과 비슷)
+    // v(value) : 값 자체 (변수에 대입되는 값)
+    const user = {
+        id : "user01",
+        pw : "pass01",
+        point : 13000
+    }
+    console.log("user : ", user, typeof user);
+    // JS객체 내 요소 하나씩 꺼내기
+    console.log("user['id'] : ", user['id'], typeof user['id']);
+    console.log("user['pw'] : ", user['pw'], typeof user['pw']);
+    console.log("user['point'] : ", user['point'], typeof user['point']);
+
+    // 3. 함수 (function)
+    const sumFn = function(a, b){   // sumFn : 함수명
+        return a + b;
+    }
+    console.log("sumFn : ", sumFn, typeof sumFn);
+    console.log( sumFn(111, 987) ); // sumFn 호출
+}

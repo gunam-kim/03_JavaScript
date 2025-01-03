@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_조건문</title>
+    <link rel="stylesheet" href="../css/05_조건문.css">
+</head>
+<body>
+    <h1>조건문</h1>
+    <pre>
+        - 프로그래밍 코드가 해석되는 순서를 제어하는 제어문 중 한 종류
+        - 작성된 조건식에 따라서 수행되는 코드를 변경하는 구문
+            * 조건식 : 결과가 true 또는 false인 식
+                ex) 논리 연산자(&&, ||, !)
+                    비교 연산자(>, ==, !=, ...)
+                    함수 호출결과로 boolean 반환
+                    boolean 단독 작성
+    </pre>
+    <h3>if문 (만약에)</h3>
+    <pre>
+        <code>
+            if(조건식) {
+                조건식이 true인 경우 수행할 코드;
+            }
+        </code>
+    </pre>
+
+    <h4>입력받은 수가 양수인지 확인</h4>
+    <input type="number" id="input1">
+    <button onclick="check1()">양수인지 검사</button>
+
+    <h3>if-else문 (만약에 ~ 아니면)</h3>
+    <pre>
+        <code>
+            if(조건식) {
+                조건식이 true인 경우 수행할 코드;
+            }
+            else {
+                조건식이 false인 경우 수행할 코드;
+            }
+
+            * else는 조건식을 작성하지 않는다
+        </code>
+    </pre>
+
+    <h4>1~100 사이의 난수를 발생시켜 홀/짝 판별하기</h4>
+    <button onclick="check2()">난수 홀/짝 확인</button>
+
+    <h3>if-else if-else문</h3>
+    <pre>
+        <code>
+            if(조건식) {
+                조건식이 true인 경우 수행할 코드;
+            }
+            else if(조건식) {
+                앞선 if문이 false이면서 현재 else if문이 true인 경우 수행할 코드;
+            }
+            else {
+                앞선 모든 if문이 false인 경우 수행할 코드;
+            }
+        </code>
+    </pre>
+
+    <h4>양수, 0, 음수 판별기</h4>
+    <input type="number" id="input3">
+    <button onclick="check3()">양수,0,음수 확인</button>
+
+    <hr>
+
+    <h4>(실습문제) 어린이, 청소년, 성인 구분하기</h4>
+    <pre>
+        나이를 입력받아
+        0~13세 : 어린이
+        14~19세 : 청소년
+        20~120세 : 성인
+        0 미만, 120 초과 : 잘못 입력하셨습니다
+    </pre>
+    나이 : <input type="number" id="inputAge">
+    <button onclick="ageCheck()">확인</button>
+    <button onclick="ageCheck2()">확인2</button>
+    
+    <script src="../js/05_조건문.js"></script>
+</body>
+</html>

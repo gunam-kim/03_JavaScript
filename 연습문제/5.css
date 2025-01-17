@@ -1,0 +1,108 @@
+/* 전체 */
+.main-container{
+    width: 700px;
+    margin: auto;
+    display: flex;
+}
+
+/* 왼쪽 */
+.main{
+    border-right: 1px solid black;
+
+    height: 100%;
+    width: 60%;
+    padding: 10px;
+}
+
+.output{
+    height: 150px;
+    text-align: center;
+    
+    font-size: 30px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 키패드 영역 */
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box > .number{
+    width: 30%;
+    height: 125.8px;
+    
+    font-size: 28px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    user-select: none;
+
+    border-radius: 50%;
+}
+
+.box > .number:hover{
+    background-color: yellowgreen;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.btn-container > .btn{
+    display: flex;
+    justify-content: center;
+    margin: 0 30px;
+    flex-grow: 1;
+    margin-top: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn-container > #add{
+    border: 5px solid green;
+    color: green;
+}
+.btn-container > #add:active{
+    border: 5px solid green;
+    background-color: green;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-container > #reset{
+    border: 5px solid gray;
+    color: gray;
+}
+.btn-container > #reset:active{
+    border: 5px solid gray;
+    background-color: gray;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+/* 오른쪽 */
+.list-board{
+    height: 100%;
+    width: 40%;
+    padding: 20px;
+    font-size: 30px;
+}
+.list > div > span:not(:first-child){
+    cursor: pointer;
+    user-select: none;
+}
